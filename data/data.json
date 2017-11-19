@@ -1,0 +1,358 @@
+{
+  "cities": [
+    {
+      "city": "New Delhi",
+      "code": "DEL"
+    },
+    {
+      "city": "Mumbai",
+      "code": "BOM"
+    },
+    {
+      "city": "Bengaluru",
+      "code": "BLR"
+    }
+  ],
+  "flights": [
+    {
+      "flight_info": {
+        "airline_depart": "GoAir",
+        "airline_no_depart": "G-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "10:00",
+        "arrival_time": "12:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4350
+      },
+      "flight_run_from": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4050
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "AirIndia",
+        "airline_no_depart": "G-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-387"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "05:30",
+        "arrival_time": "06:40",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4010
+      },
+      "flight_run_from": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "09:00",
+        "arrival_time": "11:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 3150
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Jet Airways",
+        "airline_no_depart": "JA-428",
+        "airline_return": "Vistara",
+        "airline_no_return":"VI-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4350
+      },
+      "flight_run_from": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "08:20",
+        "arrival_time": "10:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 5050
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Spice Jet",
+        "airline_no_depart": "SG-428",
+        "airline_return": "GoAir",
+        "airline_no_return":"GO-29"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "23:00",
+        "arrival_time": "01:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 2350
+      },
+      "flight_run_from": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "04:30",
+        "arrival_time": "06:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 2850
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Indigo",
+        "airline_no_depart": "I-428",
+        "airline_return": "Spice Jet",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "19:20",
+        "arrival_time": "21:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 6000
+      },
+      "flight_run_from": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "00:00",
+        "arrival_time": "02:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 3510
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Vistara",
+        "airline_no_depart": "VI-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "12:00",
+        "arrival_time": "14:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4880
+      },
+      "flight_run_from": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 5000
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "GoAir",
+        "airline_no_depart": "G-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "10:00",
+        "arrival_time": "12:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4350
+      },
+      "flight_run_from": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4050
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "AirIndia",
+        "airline_no_depart": "G-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-387"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BOM",
+        "depart_time": "17:30",
+        "arrival_time": "19:40",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 4700
+      },
+      "flight_run_from": {
+        "origin": "BOM",
+        "Dest": "DEL",
+        "depart_time": "09:00",
+        "arrival_time": "11:00",
+        "start":"1511136000",
+        "end":"1511222399",
+        "Price": 3150
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Jet Airways",
+        "airline_no_depart": "JA-428",
+        "airline_return": "Vistara",
+        "airline_no_return":"VI-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "BLR",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "Price": 4350
+      },
+      "flight_run_from": {
+        "origin": "BLR",
+        "Dest": "BOM",
+        "depart_time": "08:20",
+        "arrival_time": "10:00",
+        "Price": 5050
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Spice Jet",
+        "airline_no_depart": "SG-428",
+        "airline_return": "GoAir",
+        "airline_no_return":"GO-29"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BLR",
+        "depart_time": "23:00",
+        "arrival_time": "01:00",
+        "Price": 2350
+      },
+      "flight_run_from": {
+        "origin": "BLR",
+        "Dest": "DEL",
+        "depart_time": "04:30",
+        "arrival_time": "06:00",
+        "Price": 2850
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Indigo",
+        "airline_no_depart": "I-428",
+        "airline_return": "Spice Jet",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BLR",
+        "Dest": "BOM",
+        "depart_time": "19:20",
+        "arrival_time": "21:00",
+        "Price": 6000
+      },
+      "flight_run_from": {
+        "origin": "BOM",
+        "Dest": "BLR",
+        "depart_time": "00:00",
+        "arrival_time": "02:00",
+        "Price": 3510
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Vistara",
+        "airline_no_depart": "VI-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BLR",
+        "Dest": "DEL",
+        "depart_time": "12:00",
+        "arrival_time": "14:00",
+        "Price": 4880
+      },
+      "flight_run_from": {
+        "origin": "DEL",
+        "Dest": "BLR",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "Price": 5000
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "Vistara",
+        "airline_no_depart": "VI-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "BOM",
+        "Dest": "BLR",
+        "depart_time": "12:00",
+        "arrival_time": "14:00",
+        "Price": 4880
+      },
+      "flight_run_from": {
+        "origin": "BLR",
+        "Dest": "BOM",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "Price": 5000
+      }
+    },
+    {
+      "flight_info": {
+        "airline_depart": "AirIndia",
+        "airline_no_depart": "VI-428",
+        "airline_return": "Jet Airways",
+        "airline_no_return":"JA-29"
+      },
+      "flight_run_to": {
+        "origin": "DEL",
+        "Dest": "BLR",
+        "depart_time": "12:00",
+        "arrival_time": "14:00",
+        "Price": 4880
+      },
+      "flight_run_from": {
+        "origin": "BLR",
+        "Dest": "DEL",
+        "depart_time": "13:00",
+        "arrival_time": "15:00",
+        "Price": 5000
+      }
+    }
+  ]
+}

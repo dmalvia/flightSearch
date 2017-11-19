@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12 searchData table">
+        <div class="journeyTitle" ng-bind="fsCtrl.searchHead.searchTitle"></div>
+        <div class="journeyDate">
+            <span class="journeyDate" ng-bind="fsCtrl.searchHead.depart"></span><br>
+            <span class="journeyDate" ng-bind="fsCtrl.searchHead.return"></span>
+        </div>
+    </div>
+</div>
+<div class="flightList">
+    <div class="row oneway" ng-repeat="item in fsCtrl.flightOneWay">
+        <div class="col-12" >
+            <div class="resultList text-center">
+                <div class="jinfo1 table">
+                    <div>
+                        <span class="arrdeptime" ng-bind="item.flight_run_to.depart_time"></span><br>
+                        <span ng-bind="item.flight_run_to.origin"></span>
+                    </div>
+                    <div>    
+                        <span ng-bind="item.flight_info.airline_depart"></span><br>
+                        <span class="flightno" ng-bind="item.flight_info.airline_no_depart"></span>
+                    </div>
+                    <div>
+                        <span class="arrdeptime" ng-bind="item.flight_run_to.arrival_time"></span><br>
+                        <span ng-bind="item.flight_run_to.Dest"></span>
+                    </div>    
+                </div>
+                <div class="jinfo2 text-right">
+                	<span class="totalprice">Rs. {{item.flight_run_to.Price | number}}</span>&nbsp;&nbsp;
+                    <span>
+						<input style="margin-top:10px;" ng-click="fsCtrl.booking()" class="bookbtn" type="button" value="Book" />
+					</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

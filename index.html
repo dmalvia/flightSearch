@@ -1,0 +1,116 @@
+
+<!--
+	Author: Dipesh Malvia
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flight Ticket Booking</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/angular-datepicker.css" rel="stylesheet" type="text/css" />
+	<link href="css/rzslider.min.css" rel="stylesheet" type="text/css" />
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body ng-app="flightApp">
+	<!-- Page Header Starts -->
+	<header>
+		<h1>Flight Search Engine</h1>
+	</header>
+	<!-- Page Header Ends -->
+	<!-- Page Body Starts -->
+	<div class="container-fluid wrapper" ng-controller="flightSearchCtrl as fsCtrl">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<section class="left-section">
+						<div id="horizontalTab">
+							<h2>Plan Trip</h2>
+							<ul class="resp-tabs-list">
+								<li class="resp-tab-item" ng-click="fsCtrl.activeRound('One Way')" ng-class="{'active':fsCtrl.classActive == 'One Way'}"><span>One Way</span></li>
+								<li class="resp-tab-item" ng-click="fsCtrl.activeRound('Round Trip')" ng-class="{'active':fsCtrl.classActive == 'Round Trip'}"><span>Round Trip</span></li>
+							</ul>	
+							<div class="clearfix"> </div>	
+							<div class="resp-tabs-container">
+								<div class="tab-1 resp-tab-content roundtrip">
+									<form ng-submit="fsCtrl.formSubmit()">
+										<div class="text-box">
+											<input type="text" name="city" class="city1" placeholder="From: City or Airport" ng-model="fsCtrl.fromCity" ng-click="fsCtrl.fromCityList = true" required="">
+											<div class="citylist" ng-show="fsCtrl.fromCityList">
+												<div ng-if="!(item.code === fsCtrl.code2)" ng-repeat="item in fsCtrl.appData.cities" ng-click="fsCtrl.selectFromCity(item.city,item.code)">
+													<span class="pull-left" ng-bind="item.city"></span>
+													<span class="pull-right" ng-bind="item.code"></span>
+												</div>
+											</div>		
+										</div>
+										<div class="text-box">
+											<input type="text" name="city" class="city1" placeholder="To: City or Airport" ng-model="fsCtrl.toCity" ng-click="fsCtrl.toCityList = true" required="">
+											<div class="citylist" ng-show="fsCtrl.toCityList">
+												<div ng-if="!(item.code === fsCtrl.code1)" ng-repeat="item in fsCtrl.appData.cities" ng-click="fsCtrl.selectToCity(item.city,item.code)">
+													<span class="pull-left" ng-bind="item.city"></span>
+													<span class="pull-right" ng-bind="item.code"></span>
+												</div>
+											</div>		
+										</div>
+										<div class="clear"></div>
+										<div class="date text-box">
+											<div class="depart col-6">
+												<datepicker date-format="mediumDate" date-min-limit="{{fsCtrl.minDate}}" date-max-limit="{{fsCtrl.maxDate}}">
+ 													 <input placeholder="Depart" required="" ng-model="fsCtrl.departDate" type="text"/>
+												</datepicker>
+											</div>
+											<div class="return col-6">
+												<datepicker date-format="mediumDate" ng-click="fsCtrl.activeRound('Round Trip')" date-min-limit="{{fsCtrl.departDate}}" date-max-limit="{{fsCtrl.maxDate}}">
+ 													 <input placeholder="Return" ng-model="fsCtrl.returnDate" type="text"/>
+												</datepicker>
+											</div>
+										</div>	
+										<div class="clear"></div>
+										<div class="text-box adultdrop">
+											<h3>Passengers</h3>
+											<select ng-init="fsCtrl.passenger = option[0]" id="w3_country1" ng-model="fsCtrl.passenger" class="frm-field required">
+												<option value="null" ng-repeat= "n in [1,2,3,4,5,6]">{{n}}</option>  
+											</select>
+										</div>
+										<div class="clear"></div>
+										<input class="searchbtn" type="submit" value="Search Flights">
+										<input class="searchbtn" type="button" value="Reset" ng-click="fsCtrl.formReset();">
+									</form>						
+								</div>		
+							</div>						
+						</div>
+						<hr>
+						<div class="text-box">
+							<h2>Price Filter</h2>
+							<rzslider class="custom-slider"
+					          rz-slider-model="fsCtrl.slider.minValue"
+					          rz-slider-high="fsCtrl.slider.maxValue"
+					          rz-slider-options="fsCtrl.slider.options">
+						    </rzslider>
+						</div>
+					</section>
+				</div>
+				<div class="col-8">
+					<section class="right-section">
+						<div class="searchmessage" ng-if="fsCtrl.showDefaultMessage">
+							Hey!! Plan your trip now, search for flights here...
+						</div>
+						<div ng-include="fsCtrl.showTemplate.url"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-w3l">
+		<p class="agileinfo"> &copy; 2017 Flight Ticket Booking </p>
+	</div>
+	<script src='js/angular.js'></script>
+	<script src="js/angular-datepicker.min.js"></script>
+	<script src="js/rzslider.min.js"></script>
+	<script src="js/app.js"></script>
+
+
+</body>
+</html>
